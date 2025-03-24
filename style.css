@@ -41,7 +41,7 @@ svg#WorldSVG {
 }
 
 #yearSelector {
-  width: 50%;
+  width: 100%;
   padding: 8px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -58,7 +58,8 @@ svg#WorldSVG {
 }
 
 .slider-container {
-  width: 50%;
+  max-width: 500px;
+  width: 100%;
 }
 
 .rubik-microbe-regular {
