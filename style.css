@@ -1,7 +1,6 @@
-/* Remove debug borders */
 * {
   box-sizing: border-box;
-  /*border: 1px solid red;*/
+  /* border: 1px solid red; */ /* Use for debugging if needed */
 }
 
 html, body {
@@ -9,6 +8,7 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
+  overflow: hidden; /* Prevent scrolling */
 }
 
 body {
@@ -19,20 +19,25 @@ body {
   background-attachment: fixed;
 }
 
-#main_container {
-  overflow-y: auto;
-}
-
 #sidebar {
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(4px);
 }
 
+#main_container {
+  height: 100%;
+  overflow: hidden;
+}
 
 #WorldSVG {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+svg#WorldSVG {
+  width: 100%;
+  height: 100%;
 }
 
 #yearSelector {
@@ -47,7 +52,7 @@ body {
   font-weight: bold;
 }
 
-#observationCount{
+#observationCount {
   font-size: 2em;
   font-weight: bold;
 }
@@ -63,7 +68,7 @@ body {
   font-size: 5em;
 }
 
-#map_title{
+#map_title {
   font-size: 2.5em;
 }
 
@@ -76,15 +81,5 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-#main_container {
-  min-height: 100%;
-}
-
-svg#WorldSVG {
-  width: 100%;
-  height: 100%
+  font-variation-settings: "wdth" 100;
 }
