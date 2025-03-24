@@ -1,0 +1,90 @@
+/* Remove debug borders */
+* {
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url('./lionfish.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#main_container {
+  overflow-y: auto;
+}
+
+#sidebar {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+
+#WorldSVG {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#yearSelector {
+  width: 50%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#errorMessage {
+  color: red;
+  font-weight: bold;
+}
+
+#observationCount{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.slider-container {
+  width: 50%;
+}
+
+.rubik-microbe-regular {
+  font-family: "Rubik Microbe", system-ui;
+  font-weight: 650;
+  font-style: normal;
+  font-size: 5em;
+}
+
+#map_title{
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#main_container {
+  min-height: 100%;
+}
+
+svg#WorldSVG {
+  width: 100%;
+  height: 100%
+}
